@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --main-color: #FFDC00;
+  --text-color: white;
+  --bg-color-01: #1f242d;
+  --bg-color-02: #323946;
+  --color-00: #0000001a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+} 
+
+html {
+  color: white;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: var(--bg-color-01);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+form{
+  text-align: center;
+  padding: 20px 5px;
+}
+
+form input {
+  flex: 8;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 8px;
+  align-self: center;
+}
+
+button {
+    font-size: 14px;
+}
+
+#buttonCreate {
+  flex: 1;
+  border-radius: 10px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #4787FF;
+  color: #fff;
+  padding: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.buttonYes {
+  flex: 1;
+  border-radius: 10px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #ff2a00;
+  color: #fff;
+  padding: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.buttonNo {
+  flex: 1;
+  border-radius: 10px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #4787FF;
+  color: #fff;
+  padding: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  margin: 3rem 4rem;
+  padding: 2rem 1rem 2.5rem;
+  border-radius: 1.2rem;
+  text-align: justify;
+  border: solid 0.15rem var(--bg-color-01);
+  background-color: var(--bg-color-02);
+  width: 70%;
+}
+
+.container-edit {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+  color: white;
+  
+  width: 70%;
+  max-width: 600px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-delete {
+  background-color: aqua;
+  color: red;
+  border-radius: 10px;
+  min-width: 60px;
+  width: 8%;
+  height: 1.7rem;
+  /* margin-left: 10px; */
+  margin: 10px;
+  
+}
+
+.btn-edit {
+  background-color: aqua;
+  color: black;
+  border-radius: 10px;
+  min-width: 50px;
+
+  width: 1%;
+  height: 1.7rem;
+
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  margin: 10px;
+
+}
+
+.input-edit {
+  flex: 8;
+  font-size: 1rem;
+  border: solid 2px gray;
+  border-radius: 10px;
+  font-weight: 100;
+  padding: 8px;
+  margin-left: 10px;
+  align-self: center;
+  width: 15rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media-queries */
+@media (min-width: 0px) {
+
+  .container {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 10px 800px;
+      padding: 10px 5px 10px;
+      
+  }
+  
+  .text{
+      width: 100%;
+  }
+
+  .btn-delete {
+      margin-top: 20px;
+      margin-bottom: 5px;
+  }
+  
+  .btn-edit {
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  form input{
+      width: 40%;
+      max-width: 400px;
+  }
+
+  .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: justify;
+      margin: 30px 100px;
+      padding: 10px 5px 10px;
+      max-width: 600px;
+  }
+  
+  .text{
+      width: 70%;
+      margin-left: 10px;
+  }
+
+  .btn-delete {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 5px;
+  }
+  
+  .btn-edit {
+      display: inline-block;
+      margin-top: 10px ;
+      margin-bottom: 10px;
+      margin-left: 5px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+}
